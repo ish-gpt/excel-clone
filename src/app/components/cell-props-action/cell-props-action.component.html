@@ -1,0 +1,91 @@
+<div class="cell-prop-cont">
+  <button mat-raised-button matTooltip="copy">
+    <span class="material-icons style-icon" (click)="onContentCopy()">
+      content_copy
+    </span>
+  </button>
+  <button mat-raised-button matTooltip="cut">
+    <span class="material-icons style-icon">content_cut</span>
+  </button>
+  <button mat-raised-button matTooltip="paste">
+    <span class="material-icons style-icon" (click)="onContentPaste()"
+      >content_paste</span
+    >
+  </button>
+  <select
+    #fontFamily
+    class="font-family-prop style-icon"
+    (change)="onFontFamilyChange($event)"
+  >
+    <option value="monospace">Monospace</option>
+    <option value="sans-sirif">Sans-Sirif</option>
+    <option value="cursive">Cursive</option>
+    <option value="fantasy">Fantasy</option>
+  </select>
+  <select
+    #fontSize
+    class="font-size-prop style-icon"
+    (change)="onFontSizeChange($event)"
+  >
+    <option value="12">12</option>
+    <option value="14" selected>14</option>
+    <option value="16">16</option>
+    <option value="20">20</option>
+  </select>
+  <span
+    class="material-icons style-icon"
+    (click)="onBoldClick()"
+    [ngClass]="isBoldEnabled ? 'highlight-icon' : ''"
+    >format_bold</span
+  >
+
+  <span
+    class="material-icons style-icon"
+    (click)="onItalicClick()"
+    [ngClass]="isItalicEnabled ? 'highlight-icon' : ''"
+  >
+    format_italic
+  </span>
+
+  <span
+    class="material-icons style-icon"
+    (click)="onUnderlineClick()"
+    [ngClass]="isUnderlinedEnabled ? 'highlight-icon' : ''"
+    >format_underlined</span
+  >
+
+  <span
+    (click)="onTextAlignmentClick('left')"
+    class="material-icons style-icon"
+    [ngClass]="isLeft ? 'highlight-icon' : ''"
+  >
+    format_align_left
+  </span>
+
+  <span
+    (click)="onTextAlignmentClick('right')"
+    class="material-icons style-icon"
+    [ngClass]="isRight ? 'highlight-icon' : ''"
+  >
+    format_align_right
+  </span>
+
+  <span
+    (click)="onTextAlignmentClick('center')"
+    class="material-icons style-icon"
+    [ngClass]="isCenter ? 'highlight-icon' : ''"
+  >
+    format_align_center
+  </span>
+  <div
+    class="color-picker-container"
+    (change)="onBackgroundColorChange($event)"
+  >
+    <span class="material-icons">format_color_fill</span>
+    <input #bgcolor type="color" class="color-picker" />
+  </div>
+  <div class="color-picker-container" (change)="onFontColorChange($event)">
+    <span class="material-icons">format_color_text</span>
+    <input #textcolor type="color" class="color-picker" />
+  </div>
+</div>

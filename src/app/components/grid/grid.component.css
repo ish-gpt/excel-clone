@@ -1,0 +1,64 @@
+.comman-cell{
+    position: fixed;
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d74;
+    z-index: 5;
+}
+
+.col-address-cont{
+    position: sticky;
+    top: 2rem;
+    left: 0rem;
+    background-color: #ecf0f1;
+}
+
+.row-address-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    display: flex;
+}
+
+.col-cells{
+    display: flex;
+}
+.row-cells{
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid #dfe4ea;
+    outline: none;
+}
+
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid #dfe4ea;
+}
+
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfe4ea;
+}
+
+.row-col-cells{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.cells{
+    height: calc(100vh - 3rem - 3rem - 3rem - 2rem );
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+
+.bold-text{
+    font-weight: 700;
+}

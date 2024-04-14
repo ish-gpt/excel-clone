@@ -1,0 +1,49 @@
+.cell-prop-cont {
+    display: flex;
+    align-items: center;
+}
+.cell-prop-cont > span,select{
+    margin: 0.5rem;
+}
+select{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.font-family-prop{
+    width: 6.5rem;
+}
+.font-size-prop{
+    width: 2.75rem;
+}
+.color-picker{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.color-picker-container {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.color-picker-container:hover {
+    cursor: pointer;
+}
+
+.style-icon{
+    cursor: pointer;
+}
+
+.highlight-icon{
+    background-color: #d1d8e0;
+}
+
+.mat-raised-button {
+    background-color: #dfe4da;
+    padding: 0px 0px;
+    min-width: 45px;
+}

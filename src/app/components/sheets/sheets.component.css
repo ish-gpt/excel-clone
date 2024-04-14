@@ -1,0 +1,22 @@
+.sheets-folder-cont{
+    width: calc(100vw - 4vw);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+
+.sheets-cont{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.sheet-folder{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.sheet-add-icon{
+    width: 2vw;
+}

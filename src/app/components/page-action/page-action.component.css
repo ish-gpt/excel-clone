@@ -1,0 +1,7 @@
+.page-action-cont{
+    display: flex;
+}
+.page-action{
+    margin: 0.5rem;
+    color: #f1f2f6;
+}

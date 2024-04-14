@@ -1,0 +1,24 @@
+.formula-cont > input{
+    border: none;
+    outline: none;   
+}
+
+.formula-cont {   
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.formula-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.address-bar{
+    width: 5rem;
+    border-radius: 0.2rem;
+}
+.formula-bar{
+    width: calc(100vw - 5rem - 2rem - 1.2rem);
+    border-radius: 0.2rem;
+}
